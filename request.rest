@@ -1,0 +1,19 @@
+POST  http://localhost:4000/login
+Content-Type: application/json
+
+{ "user": {
+    "name": "Deepak",
+    "is":"" } 
+}  
+
+###
+
+POST http://localhost:4000/refresh
+Content-Type: application/json
+
+{
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGVlcGFrIiwiaXMiOiIiLCJpYXQiOjE2Nzk1MDc0OTQsImV4cCI6MTY3OTUwNzU1NH0.9S4RcgLwvwb1diAZ_ZupAzRL1LXxLoMHVpY0Vfr8Clk"
+}
+###
+POST http://localhost:4000/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRlZXBhayIsImlhdCI6MTY3OTUwNzUwMywiZXhwIjoxNjc5NTA3NTMzfQ.kXTqSXzoZmr_d-KX4lho__a22PoksrNo5RFxjqcMvac
